@@ -1,0 +1,16 @@
+{
+  "name": "ocr_project_backend",
+  "version": "1.0.0",
+  "description": "catch the text from image text ...",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "tesseract.js": "^5.1.0"
+  }
+}
