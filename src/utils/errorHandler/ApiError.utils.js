@@ -26,6 +26,13 @@ class ApiError extends Error {
     }
   }
 
+  /**
+ * @usage of static error handler 
+ * @call how to use this , call next lin code >
+ * throw ApiErro.YourMethodName ....
+ * 
+ */
+
   //  ----static method for bad request ----
   static badRequest(message = "Bad Request", error = []) {
     return new ApiError(400, message, null, error);
