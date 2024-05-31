@@ -19,6 +19,9 @@ app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+import  useRouter  from "./routes/ocr.routes.js";
+app.use("/api/v1/ocr-ready", useRouter);
+
 //
 app.get("/", (req, res) => {
   res.send("Don't panic here i am running correctly ");

@@ -58,10 +58,8 @@ const processImage = async (req, res, next) => {
   // Save the processed image
   await image.toFile(processedImagePath);
 
-  req.procImage = processImage;
+  req.procImage = processedImagePath;
   next();
-
-  
 };
 
 export default processImage;
